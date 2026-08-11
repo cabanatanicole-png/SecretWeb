@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Message ♡</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #fff5f7;
+
+            color: #5a3d43;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* MAIN CONTAINER */
+
+        .container {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+        }
+
+
+        .content {
+
+            width: 100%;
+
+            max-width: 650px;
+
+        }
+
+
+        /* ICON */
+
+        .icon {
+
+            font-size: 55px;
+
+            color: #c95770;
+
+            font-family: Georgia, serif;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        /* TITLE */
+
+        h1 {
+
+            color: #c95770;
+
+            font-size: 38px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .subtitle {
+
+            color: #8a6870;
+
+            font-size: 15px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* LETTER */
+
+        .letter {
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 35px;
+
+            box-shadow:
+            0 8px 25px
+            rgba(180, 90, 110, 0.12);
+
+        }
+
+
+        .letter-icon {
+
+            font-size: 40px;
+
+            color: #c95770;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .letter h2 {
+
+            color: #c95770;
+
+            font-size: 24px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .message {
+
+            display: none;
+
+            text-align: left;
+
+            line-height: 1.8;
+
+            color: #6d5258;
+
+            font-size: 15px;
+
+        }
+
+
+        .message p {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* BUTTON */
+
+        .button {
+
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 13px 28px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            background: #c95770;
+
+            color: white;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        .button:hover {
+
+            background: #a9435b;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* BACK BUTTON */
+
+        .back {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 10px 22px;
+
+            border-radius: 25px;
+
+            border: 1px solid #c95770;
+
+            color: #c95770;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .back:hover {
+
+            background: #c95770;
+
+            color: white;
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 30px;
+
+            }
+
+
+            .letter {
+
+                padding: 25px 20px;
+
+            }
+
+
+            .message {
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="content">
+
+
+            <!-- ICON -->
+
+            <div class="icon">✉</div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                A Message For You
+            </h1>
+
+
+            <p class="subtitle">
+                Something I want you to know. ♡
+            </p>
+
+
+            <!-- LETTER -->
+
+            <div class="letter">
+
+                <div class="letter-icon">
+                    ♡
+                </div>
+
+
+                <h2>
+                    For you!
+                </h2>
+
+
+                <!-- MESSAGE -->
+
+                <div class="message" id="message">
+
+                    <p>
+                        Happy Monthsary! ♡
+                    </p>
+
+
+                    <p>
+                    It's been 32 months and 959 days since we've been together, lovey.
+                    </p>
+
+
+                    <p>
+                        I'm so blessed to have you as part of my life. 
+                        Thank you for everything, 
+                        and thank you for giving me the love that I deserve.
+                    </p>
+
+
+                    <p>
+                        I may not always know the perfect words to say, 
+                        but I hope you know how much I appreciate having you in my life.
+                    </p>
+
+                    <p>
+                        I hope we can continue creating more beautiful 
+                        memories together and enjoying every little 
+                        moment that comes our way. ♡
+                    </p>
+
+                    <p>
+                        iloveyouuuu ♡
+                    </p>
+
+
+                </div>
+
+
+                <!-- OPEN BUTTON -->
+
+                <button
+                    class="button"
+                    onclick="openLetter()"
+                    id="openButton">
+
+                    Open My Letter ♡
+
+                </button>
+
+            </div>
+
+
+            <!-- BACK -->
+
+            <a href="Mweb.html" class="back">
+                ♡ Back to Home
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function openLetter() {
+
+            const message =
+                document.getElementById("message");
+
+            const button =
+                document.getElementById("openButton");
+
+
+            message.style.display = "block";
+
+            button.style.display = "none";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+

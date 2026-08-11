@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Our Surprise ♡</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #fff5f7;
+
+            color: #5a3d43;
+
+        }
+
+
+        /* MAIN */
+
+        .container {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+        }
+
+
+        .content {
+
+            width: 100%;
+
+            max-width: 600px;
+
+        }
+
+
+        /* ICON */
+
+        .icon {
+
+            font-size: 65px;
+
+            color: #c95770;
+
+            font-family: Georgia, serif;
+
+            margin-bottom: 15px;
+
+            transition: 0.5s;
+
+        }
+
+
+        /* TITLE */
+
+        h1 {
+
+            color: #c95770;
+
+            font-size: 38px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .subtitle {
+
+            color: #8a6870;
+
+            font-size: 15px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* SURPRISE CARD */
+
+        .surprise-box {
+
+            background: white;
+
+            padding: 40px 30px;
+
+            border-radius: 30px;
+
+            box-shadow:
+            0 8px 25px
+            rgba(180, 90, 110, 0.12);
+
+        }
+
+
+        .surprise-box h2 {
+
+            color: #c95770;
+
+            font-size: 24px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .surprise-box p {
+
+            color: #8a6870;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+
+        }
+
+
+        /* BUTTON */
+
+        .button {
+
+            margin-top: 25px;
+
+            padding: 13px 30px;
+
+            background: #c95770;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 25px;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        .button:hover {
+
+            background: #a9435b;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* HIDDEN MESSAGE */
+
+        #hiddenMessage {
+
+            display: none;
+
+            margin-top: 25px;
+
+            padding: 25px;
+
+            background: #fff0f3;
+
+            border-radius: 20px;
+
+            color: #c95770;
+
+            line-height: 1.8;
+
+            animation: appear 0.8s ease;
+
+        }
+
+
+        @keyframes appear {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(15px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        /* MUSIC STATUS */
+
+        #musicStatus {
+
+            display: none;
+
+            margin-top: 15px;
+
+            color: #9b7b82;
+
+            font-size: 13px;
+
+        }
+
+
+        /* BACK BUTTON */
+
+        .back {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 10px 22px;
+
+            border: 1px solid #c95770;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+
+            color: #c95770;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .back:hover {
+
+            background: #c95770;
+
+            color: white;
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 30px;
+
+            }
+
+
+            .surprise-box {
+
+                padding: 30px 20px;
+
+            }
+
+
+            .icon {
+
+                font-size: 55px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source src="hiling.mp4" type="audio/mpeg">
+
+        Your browser does not support audio.
+
+    </audio>
+
+
+
+    <div class="container">
+
+        <div class="content">
+
+
+            <!-- ICON -->
+
+            <div class="icon" id="icon">
+                ✧
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                A Little Surprise
+            </h1>
+
+
+            <p class="subtitle">
+                I have something special for you. ♡
+            </p>
+
+
+            <!-- SURPRISE BOX -->
+
+            <div class="surprise-box">
+
+                <h2>
+                    Ready?
+                </h2>
+
+
+                <p>
+                    There is a little message waiting
+                    for you.  ♡
+                </p>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    class="button"
+                    id="surpriseButton"
+                    onclick="showSurprise()">
+
+                    Open My Surprise ✧
+
+                </button>
+
+                
+
+
+                <!-- HIDDEN MESSAGE -->
+
+                <div id="hiddenMessage">
+
+                    <p>
+                        You will always be one of the
+                        most special people in my life. ♡
+                    </p>
+
+
+                    <br>
+
+
+                    <p>
+                        Thank you for all the memories,
+                        laughter, love, and little moments
+                        we've shared.
+                    </p>
+
+
+                    <br>
+
+
+                    <p>
+                        More months, years, days to come lovey,
+                        Lets make more memories together.
+                        Your maldita love's you as always. ♡
+                    </p>
+
+
+                    <br>
+
+
+                    <strong>
+                        Happy Monthsary, Lovey! ♡
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- BACK -->
+
+            <a href="Mweb.html" class="back">
+                ♡ Back to Home
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function showSurprise() {
+
+            const message =
+                document.getElementById("hiddenMessage");
+
+            const button =
+                document.getElementById("surpriseButton");
+
+            const icon =
+                document.getElementById("icon");
+
+            const music =
+                document.getElementById("backgroundMusic");
+
+            const musicStatus =
+                document.getElementById("musicStatus");
+
+
+            /* SHOW MESSAGE */
+
+            message.style.display = "block";
+
+
+            /* HIDE BUTTON */
+
+            button.style.display = "none";
+
+
+            /* CHANGE ICON */
+
+            icon.innerHTML = "♡";
+
+
+            /* PLAY MUSIC */
+
+            music.play();
+
+
+            /* SHOW MUSIC STATUS */
+
+            musicStatus.style.display = "block";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
