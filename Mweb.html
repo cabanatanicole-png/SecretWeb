@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Monthsary ♡</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5f7;
+            color: #5a3d43;
+        }
+
+        /* HOME */
+        .home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .home-container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* TOP HEART */
+        .heart {
+            font-size: 55px;
+            color: #c95770;
+            margin-bottom: 10px;
+        }
+
+        /* TITLE */
+        .title {
+            color: #c95770;
+            font-size: 40px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #8a6870;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        /* NAVIGATION */
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* NAVIGATION BOX */
+        .nav-box {
+            height: 220px;
+            background: #ffffff;
+            border-radius: 30px;
+
+            text-decoration: none;
+            color: #5a3d43;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 0 8px 25px rgba(180, 90, 110, 0.12);
+
+            transition: all 0.3s ease;
+        }
+
+        /* HOVER EFFECT */
+        .nav-box:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(180, 90, 110, 0.20);
+        }
+
+        /* ICONS */
+        .nav-icon {
+            font-size: 55px;
+            color: #c95770;
+            margin-bottom: 15px;
+            font-family: Georgia, serif;
+
+            transition: 0.3s ease;
+        }
+
+        .nav-box:hover .nav-icon {
+            transform: scale(1.15);
+        }
+
+        /* TITLE INSIDE BOX */
+        .nav-title {
+            font-size: 21px;
+            font-weight: bold;
+            color: #c95770;
+        }
+
+        /* DESCRIPTION */
+        .nav-description {
+            font-size: 13px;
+            color: #9b7b82;
+            margin-top: 7px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .title {
+                font-size: 30px;
+            }
+
+            .subtitle {
+                margin-bottom: 25px;
+                font-size: 14px;
+            }
+
+            .navigation {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .nav-box {
+                height: 160px;
+                border-radius: 22px;
+            }
+
+            .nav-icon {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            .nav-title {
+                font-size: 18px;
+            }
+
+            .nav-description {
+                font-size: 12px;
+            }
+
+            .heart {
+                font-size: 45px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <section class="home">
+
+        <div class="home-container">
+
+            <!-- HEART -->
+            <div class="heart">♡</div>
+
+            <!-- TITLE -->
+            <h1 class="title">
+               Special Month ♡ 
+            </h1>
+
+            <p class="subtitle">
+                A little space for our memories and moments.
+            </p>
+
+
+            <!-- THREE NAVIGATION BOXES -->
+            <div class="navigation">
+
+
+                <!-- MEMORIES -->
+                <a href="memories.html" class="nav-box">
+
+                    <div class="nav-icon">♡</div>
+
+                    <div class="nav-title">
+                        Memories
+                    </div>
+
+                    <div class="nav-description">
+                        Our favorite moments
+                    </div>
+
+                </a>
+
+
+                <!-- MESSAGE -->
+                <a href="message.html" class="nav-box">
+
+                    <div class="nav-icon">✉</div>
+
+                    <div class="nav-title">
+                        Message
+                    </div>
+
+                    <div class="nav-description">
+                        A letter for you
+                    </div>
+
+                </a>
+
+
+                <!-- SURPRISE -->
+                <a href="surprise.html" class="nav-box">
+
+                    <div class="nav-icon">✧</div>
+
+                    <div class="nav-title">
+                        Surprise
+                    </div>
+
+                    <div class="nav-description">
+                        Something special
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
+

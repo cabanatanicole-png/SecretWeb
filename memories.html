@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+       
+    <title>Our Memories ♡</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #fff5f7;
+
+            color: #5a3d43;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* HEADER */
+
+        header {
+
+            text-align: center;
+
+            padding: 50px 20px 30px;
+
+        }
+
+
+        .icon {
+
+            font-size: 50px;
+
+            color: #c95770;
+
+            font-family: Georgia, serif;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        h1 {
+
+            color: #c95770;
+
+            font-size: 36px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .subtitle {
+
+            color: #8a6870;
+
+            font-size: 15px;
+
+        }
+
+
+        /* GALLERY */
+
+        .gallery {
+
+            max-width: 900px;
+
+            margin: 20px auto 50px;
+
+            padding: 0 20px;
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .photo {
+
+            background: white;
+
+            padding: 10px;
+
+            border-radius: 20px;
+
+            box-shadow:
+            0 8px 20px
+            rgba(180, 90, 110, 0.12);
+
+            transition: 0.3s;
+
+        }
+
+
+        .photo:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+            0 12px 25px
+            rgba(180, 90, 110, 0.20);
+
+        }
+
+
+        .photo img {
+
+            width: 100%;
+
+            height: 230px;
+
+            object-fit: cover;
+
+            border-radius: 15px;
+
+            display: block;
+
+        }
+
+
+        .caption {
+
+            text-align: center;
+
+            padding: 12px 5px 5px;
+
+            color: #8a6870;
+
+            font-size: 14px;
+
+        }
+
+
+        /* BACK BUTTON */
+
+        .back {
+
+            display: block;
+
+            width: fit-content;
+
+            margin: 0 auto 40px;
+
+            padding: 12px 25px;
+
+            background: #c95770;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .back:hover {
+
+            background: #a9435b;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            h1 {
+
+                font-size: 30px;
+
+            }
+
+
+            .gallery {
+
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 12px;
+
+            }
+
+
+            .photo img {
+
+                height: 180px;
+
+            }
+
+        }
+
+
+        @media (max-width: 450px) {
+
+            .gallery {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .photo img {
+
+                height: 250px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="icon">♡</div>
+
+        <h1>Our Memories</h1>
+
+        <p class="subtitle">
+            Little moments that became a special memories.
+        </p>
+
+    </header>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <div class="gallery">
+
+
+        <div class="photo">
+
+            <img src="picture1.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                Our first memory ♡
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="picture2.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                A special moment
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="picture3.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                One of my favorites
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="picture4.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                A day to remember
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="picture5.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                Another beautiful moment
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="picture6.jfif"
+                 alt="Our Memory">
+
+            <div class="caption">
+                Forever a memory ♡
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- BACK BUTTON -->
+
+    <a href="Mweb.html" class="back">
+        ♡ Back to Home
+    </a>
+
+
+</body>
+
+</html>
